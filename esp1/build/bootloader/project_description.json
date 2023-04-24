@@ -1,0 +1,26 @@
+{
+    "project_name":       "bootloader",
+    "project_path":       "/home/orion/esp/esp-idf/components/bootloader/subproject",
+    "build_dir":          "/home/orion/Documents/projects/espProjects/esp1/build/bootloader",
+    "config_file":        "/home/orion/Documents/projects/espProjects/esp1/sdkconfig",
+    "config_defaults":    "",
+    "bootloader_elf":     "",
+    "app_elf":            "bootloader.elf",
+    "app_bin":            "bootloader.bin",
+    "build_type":         "flash_app",
+    "git_revision":       "v5.1-dev-4375-g42261df71f",
+    "target":             "esp32",
+    "rev":                "0",
+    "min_rev":            "0",
+    "max_rev":            "399",
+    "phy_data_partition": "",
+    "monitor_baud" :      "115200",
+    "monitor_toolprefix": "xtensa-esp32-elf-",
+    "config_environment" : {
+        "COMPONENT_KCONFIGS" : "/home/orion/esp/esp-idf/components/efuse/Kconfig;/home/orion/esp/esp-idf/components/esp_common/Kconfig;/home/orion/esp/esp-idf/components/esp_hw_support/Kconfig;/home/orion/esp/esp-idf/components/esp_system/Kconfig;/home/orion/esp/esp-idf/components/freertos/Kconfig;/home/orion/esp/esp-idf/components/hal/Kconfig;/home/orion/esp/esp-idf/components/log/Kconfig;/home/orion/esp/esp-idf/components/newlib/Kconfig;/home/orion/esp/esp-idf/components/soc/Kconfig;/home/orion/esp/esp-idf/components/spi_flash/Kconfig",
+        "COMPONENT_KCONFIGS_PROJBUILD" : "/home/orion/esp/esp-idf/components/bootloader/Kconfig.projbuild;/home/orion/esp/esp-idf/components/esp_app_format/Kconfig.projbuild;/home/orion/esp/esp-idf/components/esp_rom/Kconfig.projbuild;/home/orion/esp/esp-idf/components/esptool_py/Kconfig.projbuild;/home/orion/esp/esp-idf/components/partition_table/Kconfig.projbuild"
+    },
+    "build_components" : [ "bootloader", "bootloader_support", "efuse", "esp_app_format", "esp_common", "esp_hw_support", "esp_rom", "esp_system", "esptool_py", "freertos", "hal", "log", "main", "micro-ecc", "newlib", "partition_table", "soc", "spi_flash", "xtensa", "" ],
+    "build_component_paths" : [ "/home/orion/esp/esp-idf/components/bootloader", "/home/orion/esp/esp-idf/components/bootloader_support", "/home/orion/esp/esp-idf/components/efuse", "/home/orion/esp/esp-idf/components/esp_app_format", "/home/orion/esp/esp-idf/components/esp_common", "/home/orion/esp/esp-idf/components/esp_hw_support", "/home/orion/esp/esp-idf/components/esp_rom", "/home/orion/esp/esp-idf/components/esp_system", "/home/orion/esp/esp-idf/components/esptool_py", "/home/orion/esp/esp-idf/components/freertos", "/home/orion/esp/esp-idf/components/hal", "/home/orion/esp/esp-idf/components/log", "/home/orion/esp/esp-idf/components/bootloader/subproject/main", "/home/orion/esp/esp-idf/components/bootloader/subproject/components/micro-ecc", "/home/orion/esp/esp-idf/components/newlib", "/home/orion/esp/esp-idf/components/partition_table", "/home/orion/esp/esp-idf/components/soc", "/home/orion/esp/esp-idf/components/spi_flash", "/home/orion/esp/esp-idf/components/xtensa", "" ],
+    "debug_prefix_map_gdbinit": ""
+}
