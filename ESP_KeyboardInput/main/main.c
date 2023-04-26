@@ -4,6 +4,10 @@
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 
+/*  Using the getchar() function we get a user input from the keyboard
+    we store the input into a string and then we output the typed characters 
+    as a string. It is nesseccary to include the string.h library. 
+*/
 
 void app_main(void)
 {
