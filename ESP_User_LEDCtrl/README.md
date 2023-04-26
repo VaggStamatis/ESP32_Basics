@@ -32,4 +32,4 @@ They are not used or needed when building with CMake and idf.py.
 
 ## LED wiring on the ESP32 
 In order to have a LED controlled by the ESP32 you need to connect it as shown in the picture below.
-<img src="" width="">
+<img src="https://github.com/VaggStamatis/ESP32_Basics/blob/main/ESP_User_LEDCtrl/ESP_BlinkLED_Wiring.png" width="600">
