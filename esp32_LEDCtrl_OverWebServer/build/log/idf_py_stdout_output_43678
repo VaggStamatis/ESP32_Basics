@@ -1,0 +1,111 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/sdkconfig
+-- App "esp32_LEDCtrl_OverWebServer" version: 90c8ad9
+-- Adding linker script /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/orion/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/orion/esp/esp-idf/components/app_trace /home/orion/esp/esp-idf/components/app_update /home/orion/esp/esp-idf/components/bootloader /home/orion/esp/esp-idf/components/bootloader_support /home/orion/esp/esp-idf/components/bt /home/orion/esp/esp-idf/components/cmock /home/orion/esp/esp-idf/components/console /home/orion/esp/esp-idf/components/cxx /home/orion/esp/esp-idf/components/driver /home/orion/esp/esp-idf/components/efuse /home/orion/esp/esp-idf/components/esp-tls /home/orion/esp/esp-idf/components/esp_adc /home/orion/esp/esp-idf/components/esp_app_format /home/orion/esp/esp-idf/components/esp_coex /home/orion/esp/esp-idf/components/esp_common /home/orion/esp/esp-idf/components/esp_eth /home/orion/esp/esp-idf/components/esp_event /home/orion/esp/esp-idf/components/esp_gdbstub /home/orion/esp/esp-idf/components/esp_hid /home/orion/esp/esp-idf/components/esp_http_client /home/orion/esp/esp-idf/components/esp_http_server /home/orion/esp/esp-idf/components/esp_https_ota /home/orion/esp/esp-idf/components/esp_https_server /home/orion/esp/esp-idf/components/esp_hw_support /home/orion/esp/esp-idf/components/esp_lcd /home/orion/esp/esp-idf/components/esp_local_ctrl /home/orion/esp/esp-idf/components/esp_mm /home/orion/esp/esp-idf/components/esp_netif /home/orion/esp/esp-idf/components/esp_netif_stack /home/orion/esp/esp-idf/components/esp_partition /home/orion/esp/esp-idf/components/esp_phy /home/orion/esp/esp-idf/components/esp_pm /home/orion/esp/esp-idf/components/esp_psram /home/orion/esp/esp-idf/components/esp_ringbuf /home/orion/esp/esp-idf/components/esp_rom /home/orion/esp/esp-idf/components/esp_system /home/orion/esp/esp-idf/components/esp_timer /home/orion/esp/esp-idf/components/esp_wifi /home/orion/esp/esp-idf/components/espcoredump /home/orion/esp/esp-idf/components/esptool_py /home/orion/esp/esp-idf/components/fatfs /home/orion/esp/esp-idf/components/freertos /home/orion/esp/esp-idf/components/hal /home/orion/esp/esp-idf/components/heap /home/orion/esp/esp-idf/components/http_parser /home/orion/esp/esp-idf/components/idf_test /home/orion/esp/esp-idf/components/ieee802154 /home/orion/esp/esp-idf/components/json /home/orion/esp/esp-idf/components/log /home/orion/esp/esp-idf/components/lwip /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/main /home/orion/esp/esp-idf/components/mbedtls /home/orion/esp/esp-idf/components/mqtt /home/orion/esp/esp-idf/components/newlib /home/orion/esp/esp-idf/components/nvs_flash /home/orion/esp/esp-idf/components/openthread /home/orion/esp/esp-idf/components/partition_table /home/orion/esp/esp-idf/components/perfmon /home/orion/esp/esp-idf/components/protobuf-c /home/orion/esp/esp-idf/components/protocomm /home/orion/esp/esp-idf/components/pthread /home/orion/esp/esp-idf/components/sdmmc /home/orion/esp/esp-idf/components/soc /home/orion/esp/esp-idf/components/spi_flash /home/orion/esp/esp-idf/components/spiffs /home/orion/esp/esp-idf/components/tcp_transport /home/orion/esp/esp-idf/components/ulp /home/orion/esp/esp-idf/components/unity /home/orion/esp/esp-idf/components/usb /home/orion/esp/esp-idf/components/vfs /home/orion/esp/esp-idf/components/wear_levelling /home/orion/esp/esp-idf/components/wifi_provisioning /home/orion/esp/esp-idf/components/wpa_supplicant /home/orion/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build
+[1/12] Performing build step for 'bootloader'
+[1/1] cd /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/bootloader/esp-idf/esptool_py && /home/orion/esp/esp-idf/tools/python_env/idf5.1_py3.10_env/bin/python /home/orion/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/bootloader/bootloader.bin
+Bootloader binary size 0x67c0 bytes. 0x840 bytes (7%) free.
+[2/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifiSetUp.c.obj
+[3/10] cd /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/esp-idf/main && /home/orion/esp/esp-idf/tools/python_env/idf5.1_py3.10_env/bin/python /home/orion/esp/esp-idf/components/spiffs/spiffsgen.py 0x100000 /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/data /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/main/main.c: In function 'ws_async_send':
+/home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/main/main.c:99:9: warning: unused variable 'fd' [-Wunused-variable]
+   99 |     int fd = resp_arg->fd;
+      |         ^~
+[5/10] Linking C static library esp-idf/main/libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable esp32_LEDCtrl_OverWebServer.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.5.1
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/esp32_LEDCtrl_OverWebServer.bin
+[9/10] cd /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/esp-idf/esptool_py && /home/orion/esp/esp-idf/tools/python_env/idf5.1_py3.10_env/bin/python /home/orion/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/partition_table/partition-table.bin /home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build/esp32_LEDCtrl_OverWebServer.bin
+esp32_LEDCtrl_OverWebServer.bin binary size 0xce850 bytes. Smallest app partition is 0x100000 bytes. 0x317b0 bytes (19%) free.
+[9/10] cd /home/orion/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/orion/esp/esp-idf -D "SERIAL_TOOL=/home/orion/esp/esp-idf/tools/python_env/idf5.1_py3.10_env/bin/python;;/home/orion/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/orion/Documents/projects/espProjects/esp32_LEDCtrl_OverWebServer/build -P /home/orion/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader/bootloader.bin 0x10000 esp32_LEDCtrl_OverWebServer.bin 0x8000 partition_table/partition-table.bin 0x110000 storage.bin
+esptool.py v4.5.1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: ac:67:b2:34:b6:c4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Auto-detected Flash size: 4MB
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000defff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x00110000 to 0x0020ffff...
+Compressed 26560 bytes to 16589...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000769f... (100 %)
+Wrote 26560 bytes (16589 compressed) at 0x00001000 in 0.8 seconds (effective 255.6 kbit/s)...
+Hash of data verified.
+Compressed 845904 bytes to 539295...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cb0a... (6 %)
+Writing at 0x00027b2e... (9 %)
+Writing at 0x0002e413... (12 %)
+Writing at 0x00034e6c... (15 %)
+Writing at 0x0003ce24... (18 %)
+Writing at 0x0004281c... (21 %)
+Writing at 0x00047fef... (24 %)
+Writing at 0x0004d893... (27 %)
+Writing at 0x00053197... (30 %)
+Writing at 0x00058cd3... (33 %)
+Writing at 0x0005eb28... (36 %)
+Writing at 0x00064246... (39 %)
+Writing at 0x000695a0... (42 %)
+Writing at 0x0006eb91... (45 %)
+Writing at 0x00073df4... (48 %)
+Writing at 0x000797fb... (51 %)
+Writing at 0x0007efaa... (54 %)
+Writing at 0x000847a4... (57 %)
+Writing at 0x0008a5a6... (60 %)
+Writing at 0x0008fa9c... (63 %)
+Writing at 0x00095272... (66 %)
+Writing at 0x0009ab2d... (69 %)
+Writing at 0x000a021a... (72 %)
+Writing at 0x000a5c49... (75 %)
+Writing at 0x000ab74c... (78 %)
+Writing at 0x000b210b... (81 %)
+Writing at 0x000b79f1... (84 %)
+Writing at 0x000bd284... (87 %)
+Writing at 0x000c65ef... (90 %)
+Writing at 0x000ce206... (93 %)
+Writing at 0x000d411f... (96 %)
+Writing at 0x000d97fc... (100 %)
+Wrote 845904 bytes (539295 compressed) at 0x00010000 in 12.2 seconds (effective 554.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 117...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (117 compressed) at 0x00008000 in 0.1 seconds (effective 368.1 kbit/s)...
+Hash of data verified.
+Compressed 1048576 bytes to 3566...
+Writing at 0x00110000... (100 %)
+Wrote 1048576 bytes (3566 compressed) at 0x00110000 in 4.8 seconds (effective 1750.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
