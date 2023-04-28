@@ -35,6 +35,10 @@ int led_state = 0;
 char index_html[4096];
 char response_data[4096];
 
+/*
+    initialize a buffer called index_html with the contents of a file called index.html
+    stored in SPIFFS (SPI Flash Memory).
+*/
 static void initi_web_page_buffer(void)
 {
     esp_vfs_spiffs_conf_t conf = {
@@ -61,6 +65,11 @@ static void initi_web_page_buffer(void)
     fclose(fp);
 }
 
+/*
+    Is used to send a web page to the client in response to an HTTP request
+    It takes a pointer to an httpd_req_t structure as an argument, which 
+    represents the HTTP request.
+*/
 esp_err_t get_req_handler(httpd_req_t *req)
 {
     int response;
@@ -76,6 +85,9 @@ esp_err_t get_req_handler(httpd_req_t *req)
     return response;
 }
 
+/*
+    Responible for handling the sending of data over the webSocket connection to clients
+*/
 static void ws_async_send(void *arg)
 {
     httpd_ws_frame_t ws_pkt;
@@ -114,6 +126,13 @@ static void ws_async_send(void *arg)
     free(resp_arg);
 }
 
+/*
+    Responsible for triggering the ws_async_send function by allocating the memory 
+    for struct async_resp_arg, filling it with the server handle and file descriptor 
+    of the web socket connection and the queueing the ws_async_send function using the 
+    httpd_queue_work function and passing the server handle, the ws_async_send function 
+    and the pointer to the resp_arg structture as its arguments.
+*/
 static esp_err_t trigger_async_send(httpd_handle_t handle, httpd_req_t *req)
 {
     struct async_resp_arg *resp_arg = malloc(sizeof(struct async_resp_arg));
@@ -122,6 +141,10 @@ static esp_err_t trigger_async_send(httpd_handle_t handle, httpd_req_t *req)
     return httpd_queue_work(handle, ws_async_send, resp_arg);
 }
 
+/*
+    is responsible for handling WebSocket requests that are sent 
+    to the server from all web Clients.
+*/
 static esp_err_t handle_ws_req(httpd_req_t *req)
 {
     if (req->method == HTTP_GET)
@@ -171,6 +194,13 @@ static esp_err_t handle_ws_req(httpd_req_t *req)
     return ESP_OK;
 }
 
+/* 
+    sets the HTTP server with a WebSocket endpoint (meaning a web address (URL))
+    configures it:  to handle GET requests on the root "/" URL
+                    to handle WebSocket requests on the "/ws" URI
+    and registers the appropriate handler functions for these URIs with the server 
+    Starts the HTTP server and returns the server handler
+*/
 httpd_handle_t setup_websocket_server(void)
 {
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
